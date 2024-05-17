@@ -6,6 +6,6 @@ export const NavigationBar = () => {
 
     
   return (
-    <div></div>
+    <div className=''></div>
   )
 }
