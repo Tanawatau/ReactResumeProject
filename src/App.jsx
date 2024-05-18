@@ -1,21 +1,35 @@
-import { NavigationBar } from "./component/main/navagitonbar";
+import { AboutMe, Introduce, PortFolio, Resume, Contact } from "./component/main/HomePageComponent";
+import { NavigationBar, Footer, AboutMeCard } from "./component/main";
 
 function App() {
   return (
     <div className="App">
-      <div className="Navigation">
-        <NavigationBar />
+      <div className="StickyCard">
+        <AboutMeCard />
       </div>
-      <div className="IntroduceSection"></div>
-      <div className="Portfolio"></div>
-      <div className="AboutMe"></div>
-      <div className="Resume">
-        <div className="EducationExp"></div>
-        <div className="WorkExp"></div>
-        <div className="ToolsAndLanguage"></div>
+      <div className="WebContent">
+        <div className="Navigation">
+          <NavigationBar />
+        </div>
+        <div className="IntroduceSection">
+          <Introduce />
+        </div>
+        <div className="Portfolio">
+          <PortFolio />
+        </div>
+        <div className="AboutMe">
+          <AboutMe />
+        </div>
+        <div className="Resume">
+          <Resume />
+        </div>
+        <div className="Contact">
+          <Contact />
+        </div>
+        <div className="Footer">
+          <Footer />
+        </div>
       </div>
-      <div className="Contact"></div>
-      <div className="Footer"></div>
     </div>
   );
 }
