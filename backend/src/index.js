@@ -14,7 +14,10 @@ app.use(bodyParser.json());
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-mongoose.connect(process.env.DB_URL).then(() => console.log("and Connect DB SuccessFully")).catch("and Cant connect with DB");
+mongoose
+  .connect(process.env.DB_URL)
+  .then(() => console.log("and Connect DB SuccessFully"))
+  .catch("and Cant connect with DB");
 
 app.listen(port, () => {
   console.log(`Server is Start on Port ${port}`);
